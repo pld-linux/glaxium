@@ -21,7 +21,7 @@ designed to provide the same feel as the old 2D games of that type,
 but with 3D for the special effects.
 
 %description -l pl
-Glaxium jest trójwymiarow± gr± kosmiczn± wukorzystuj±c± OpenGL. Idea
+Glaxium jest trójwymiarow± gr± kosmiczn± wykorzystuj±c± OpenGL. Idea
 tej gry jest zaczerpniêta ze starych dwuwymiarowych strzelanek
 kosmicznych.
 
