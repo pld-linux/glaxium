@@ -2,7 +2,7 @@ Summary:	OpenGL-based space-ship "shoot-em-up"
 Summary(pl):	Trójwymiarowa kosmiczna strzelanka
 Name:		glaxium
 Version:	0.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://xhosxe.free.fr/glaxium/%{name}_%{version}.tar.gz
