@@ -4,8 +4,7 @@ Name:		glaxium
 Version:	0.5
 Release:	1
 License:	GPL
-Group:		X11/Applicaions/Games
-######		Unknown group!
+Group:		X11/Applications/Games
 Source0:	http://xhosxe.free.fr/glaxium/%{name}_%{version}.tar.gz
 # Source0-md5:	ea6d6f8b4ebb7c73b74af64d83f45cb7
 URL:		http://xhosxe.free.fr/glaxium
