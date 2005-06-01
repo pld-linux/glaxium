@@ -11,7 +11,9 @@ URL:		http://xhosxe.free.fr/glaxium
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	OpenGL-devel
+BuildRequires:	gcc-c++
 BuildRequires:	glut-devel
+BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
