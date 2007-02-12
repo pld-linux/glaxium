@@ -1,5 +1,5 @@
 Summary:	OpenGL-based space-ship "shoot-em-up"
-Summary(pl):	Trójwymiarowa kosmiczna strzelanka
+Summary(pl.UTF-8):   TrÃ³jwymiarowa kosmiczna strzelanka
 Name:		glaxium
 Version:	0.5
 Release:	2
@@ -21,9 +21,9 @@ Glaxium is an OpenGL-based space-ship "shoot-em-up" styled game. It is
 designed to provide the same feel as the old 2D games of that type,
 but with 3D for the special effects.
 
-%description -l pl
-Glaxium jest trójwymiarow± gr± kosmiczn± wykorzystuj±c± OpenGL. Idea
-tej gry jest zaczerpniêta ze starych dwuwymiarowych strzelanek
+%description -l pl.UTF-8
+Glaxium jest trÃ³jwymiarowÄ… grÄ… kosmicznÄ… wykorzystujÄ…cÄ… OpenGL. Idea
+tej gry jest zaczerpniÄ™ta ze starych dwuwymiarowych strzelanek
 kosmicznych.
 
 %prep
