@@ -1,5 +1,5 @@
 Summary:	OpenGL-based space-ship "shoot-em-up"
-Summary(pl.UTF-8):   Trójwymiarowa kosmiczna strzelanka
+Summary(pl.UTF-8):	Trójwymiarowa kosmiczna strzelanka
 Name:		glaxium
 Version:	0.5
 Release:	2
