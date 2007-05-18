@@ -9,10 +9,10 @@ Source0:	http://xhosxe.free.fr/glaxium/%{name}_%{version}.tar.gz
 # Source0-md5:	ea6d6f8b4ebb7c73b74af64d83f45cb7
 URL:		http://xhosxe.free.fr/glaxium
 BuildRequires:	OpenGL-devel
+BuildRequires:	OpenGL-glut-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	gcc-c++
-BuildRequires:	glut-devel
 BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
