@@ -1,0 +1,11 @@
+diff -urN glaxium_0.5.orig/variables.cpp glaxium_0.5/variables.cpp
+--- glaxium_0.5.orig/variables.cpp	2007-05-18 20:49:01.000000000 +0200
++++ glaxium_0.5/variables.cpp	2007-05-18 21:11:35.000000000 +0200
+@@ -453,6 +453,7 @@
+ 	static char strReturn[1024];
+ 	strcpy(strReturn, getenv("HOME"));
+ 	strcat(strReturn, "/.glaxiumrc");
++	return strReturn;
+ #endif
+ }
+ 
