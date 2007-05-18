@@ -7,6 +7,8 @@ License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://xhosxe.free.fr/glaxium/%{name}_%{version}.tar.gz
 # Source0-md5:	ea6d6f8b4ebb7c73b74af64d83f45cb7
+Patch0:		%{name}-gcc4.patch
+Patch1:		%{name}-startup_crash.patch
 URL:		http://xhosxe.free.fr/glaxium
 BuildRequires:	OpenGL-devel
 BuildRequires:	OpenGL-glut-devel
@@ -28,6 +30,8 @@ kosmicznych.
 
 %prep
 %setup -q -n %{name}_%{version}
+%patch0 -p1
+%patch1 -p1
 sed 's/^GLAXIUM_INSTALLDIR=/GLAXIUM_INSTALLDIR=$(DESTDIR)/' Makefile.in > Makefile.in.tmp
 sed 's/^GLAXIUM_HOME=/GLAXIUM_HOME=$(DESTDIR)/' Makefile.in.tmp > Makefile.in
 sed 's/^MAN_DIR=/MAN_DIR=$(DESTDIR)/' Makefile.in > Makefile.in.tmp
@@ -51,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.txt CHANGES.txt
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/glaxium
 %{_datadir}/games/%{name}
-%{_mandir}/*/*
+%{_mandir}/man6/glaxium.6*
