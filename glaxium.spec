@@ -11,11 +11,12 @@ Patch0:		%{name}-gcc4.patch
 Patch1:		%{name}-startup_crash.patch
 URL:		http://xhosxe.free.fr/glaxium
 BuildRequires:	OpenGL-devel
-BuildRequires:	OpenGL-glut-devel
+BuildRequires:	OpenGL-glut-devel >= 4.0
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
-BuildRequires:	gcc-c++
 BuildRequires:	libpng-devel
+BuildRequires:	libstdc++-devel
+Requires:	OpenGL-glut >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
