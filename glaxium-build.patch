@@ -1,0 +1,31 @@
+--- glaxium_0.5/Makefile.in~	2012-02-12 22:20:30.033066845 +0100
++++ glaxium_0.5/Makefile.in	2012-02-12 22:23:03.393964649 +0100
+@@ -1,7 +1,8 @@
+ 
+-CC=@CXX@
++CC=@CC@
++CXX=@CXX@
+ INCLUDE=@CFLAGS@ @CPPFLAGS@
+-LIB=@LIBS@
++LIB=@LIBS@ -lm
+ 
+ OBJ= $(patsubst %.cpp,%.o,$(wildcard *.cpp))
+ DATE=`date +"%d.%m.%Y"`
+@@ -19,7 +20,7 @@
+ MAN_DIR=$(mandir)
+ 
+ glaxium : $(OBJ)
+-	gcc -g -o glaxium $(OBJ) $(LIB)
++	$(CXX) -g -o glaxium $(OBJ) $(LIB)
+ 
+ 
+ 
+@@ -31,7 +32,7 @@
+ 
+ 
+ %.o : %.cpp
+-	$(CC) -c  $(INCLUDE) $< -o $@ -DDATADIR=\"$(GLAXIUM_HOME)\"
++	$(CXX) -c  $(INCLUDE) $< -o $@ -DDATADIR=\"$(GLAXIUM_HOME)\"
+ 
+ 
+ install: glaxium
