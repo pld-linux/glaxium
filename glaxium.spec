@@ -2,13 +2,14 @@ Summary:	OpenGL-based space-ship "shoot-em-up"
 Summary(pl.UTF-8):	Trójwymiarowa kosmiczna strzelanka
 Name:		glaxium
 Version:	0.5
-Release:	6
+Release:	7
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://xhosxe.free.fr/glaxium/%{name}_%{version}.tar.gz
 # Source0-md5:	ea6d6f8b4ebb7c73b74af64d83f45cb7
 Patch0:		%{name}-gcc4.patch
 Patch1:		%{name}-startup_crash.patch
+Patch2:		%{name}-build.patch
 URL:		http://xhosxe.free.fr/glaxium
 BuildRequires:	OpenGL-devel
 BuildRequires:	OpenGL-glut-devel
@@ -32,6 +33,7 @@ kosmicznych.
 %setup -q -n %{name}_%{version}
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 sed 's/^GLAXIUM_INSTALLDIR=/GLAXIUM_INSTALLDIR=$(DESTDIR)/' Makefile.in > Makefile.in.tmp
 sed 's/^GLAXIUM_HOME=/GLAXIUM_HOME=$(DESTDIR)/' Makefile.in.tmp > Makefile.in
 sed 's/^MAN_DIR=/MAN_DIR=$(DESTDIR)/' Makefile.in > Makefile.in.tmp
