@@ -31,9 +31,9 @@ kosmicznych.
 
 %prep
 %setup -q -n %{name}_%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
 sed 's/^GLAXIUM_INSTALLDIR=/GLAXIUM_INSTALLDIR=$(DESTDIR)/' Makefile.in > Makefile.in.tmp
 sed 's/^GLAXIUM_HOME=/GLAXIUM_HOME=$(DESTDIR)/' Makefile.in.tmp > Makefile.in
 sed 's/^MAN_DIR=/MAN_DIR=$(DESTDIR)/' Makefile.in > Makefile.in.tmp
